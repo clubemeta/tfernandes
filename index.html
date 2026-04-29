@@ -2,6 +2,8 @@
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%231A1208'/><text y='68' x='50' text-anchor='middle' font-size='58' font-family='Georgia,serif' fill='%23C9A84C'>T</text></svg>">
+  <link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%231A1208'/><text y='68' x='50' text-anchor='middle' font-size='58' font-family='Georgia,serif' fill='%23C9A84C'>T</text></svg>">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Viver de Mechas | Thays Fernandes</title>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,600;0,700;1,300;1,600;1,700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -515,6 +517,101 @@ footer a{color:var(--gold);text-decoration:none;}
 }
 
 </style>
+
+  <!-- Hotmart Widget -->
+  <script type="text/javascript">
+    function importHotmart(){
+      var s = document.createElement('script');
+      s.src = 'https://static.hotmart.com/checkout/widget.min.js';
+      document.head.appendChild(s);
+      var l = document.createElement('link');
+      l.rel='stylesheet'; l.type='text/css';
+      l.href='https://static.hotmart.com/css/hotmart-fb.min.css';
+      document.head.appendChild(l);
+    }
+    importHotmart();
+  </script>
+
+  <style>
+  /* ── LEAD MODAL ── */
+  .modal-overlay{
+    display:none;position:fixed;inset:0;z-index:9000;
+    background:rgba(0,0,0,.75);backdrop-filter:blur(6px);
+    align-items:center;justify-content:center;padding:20px;
+  }
+  .modal-overlay.open{ display:flex; }
+  .modal-box{
+    background:linear-gradient(145deg,#1A1208,#0E0A04);
+    border:1px solid rgba(201,168,76,.3);
+    border-radius:20px;padding:44px 40px;
+    width:100%;max-width:460px;position:relative;
+    box-shadow:0 30px 80px rgba(0,0,0,.6);
+    animation:fadeUp .35s ease;
+  }
+  .modal-close{
+    position:absolute;top:16px;right:20px;
+    background:none;border:none;color:rgba(255,255,255,.4);
+    font-size:1.5rem;cursor:pointer;line-height:1;
+    transition:color .2s;
+  }
+  .modal-close:hover{ color:#fff; }
+  .modal-tag{
+    font-size:.68rem;letter-spacing:2.5px;text-transform:uppercase;
+    color:var(--gold);font-weight:600;margin-bottom:10px;display:block;
+  }
+  .modal-title{
+    font-family:'Cormorant Garamond',serif;
+    font-size:1.9rem;font-weight:700;color:#fff;
+    line-height:1.1;margin-bottom:8px;
+  }
+  .modal-title em{ font-style:italic;color:var(--gold-l); }
+  .modal-sub{
+    font-size:.83rem;color:rgba(255,255,255,.4);
+    line-height:1.6;margin-bottom:28px;
+  }
+  .field-group{ display:flex;flex-direction:column;gap:12px;margin-bottom:22px; }
+  .field-wrap{ display:flex;flex-direction:column;gap:5px; }
+  .field-wrap label{
+    font-size:.72rem;letter-spacing:1px;text-transform:uppercase;
+    color:rgba(255,255,255,.45);font-weight:500;
+  }
+  .field-wrap input{
+    background:rgba(255,255,255,.06);
+    border:1px solid rgba(255,255,255,.1);
+    border-radius:8px;padding:14px 16px;
+    color:#fff;font-family:'Outfit',sans-serif;font-size:.92rem;
+    outline:none;transition:border-color .2s,background .2s;
+    width:100%;
+  }
+  .field-wrap input:focus{
+    border-color:rgba(201,168,76,.5);
+    background:rgba(201,168,76,.06);
+  }
+  .field-wrap input::placeholder{ color:rgba(255,255,255,.2); }
+  .modal-btn{
+    width:100%;padding:17px;
+    background:linear-gradient(135deg,var(--gold) 0%,var(--gold-l) 50%,var(--gold) 100%);
+    background-size:200%;
+    color:var(--dark);font-weight:700;font-size:1rem;
+    border:none;border-radius:6px;cursor:pointer;
+    font-family:'Outfit',sans-serif;letter-spacing:.3px;
+    transition:background-position .4s,transform .2s,box-shadow .3s;
+    box-shadow:0 8px 30px rgba(201,168,76,.3);
+  }
+  .modal-btn:hover{
+    background-position:right;transform:translateY(-2px);
+    box-shadow:0 14px 40px rgba(201,168,76,.5);
+  }
+  .modal-lock{
+    display:flex;align-items:center;justify-content:center;gap:7px;
+    margin-top:14px;font-size:.72rem;color:rgba(255,255,255,.25);
+  }
+  @media(max-width:500px){
+    .modal-box{ padding:32px 24px; }
+    .modal-title{ font-size:1.6rem; }
+  }
+  </style>
+
 </head>
 <body>
 <div class="cursor-glow" id="cursorGlow"></div>
@@ -696,7 +793,7 @@ footer a{color:var(--gold);text-decoration:none;}
           <div style="color:rgba(255,255,255,.3);font-size:.8rem;text-decoration:line-through;margin-bottom:2px;">R$ 97</div>
           <div style="font-family:'Cormorant Garamond',serif;font-size:2.8rem;color:var(--gold-l);font-weight:700;line-height:1;">R$ 67</div>
           <div style="font-size:.75rem;color:rgba(255,255,255,.3);margin-top:4px;margin-bottom:22px;">acesso imediato · PDF + receitas</div>
-          <a href="https://pay.kiwify.com.br/R9U6i9X" class="btn-ghost" style="display:inline-flex;">📖 Quero Só o Guia →</a>
+          <a href="#" onclick="openModal();return false;" class="btn-ghost" style="display:inline-flex;">📖 Quero Só o Guia →</a>
         </div>
       </div>
     </div>
@@ -754,7 +851,7 @@ footer a{color:var(--gold);text-decoration:none;}
           <div class="perk"><span class="pk">✦</span> Guia de matização em casa</div>
           <div class="perk"><span class="pk">✦</span> Acesso vitalício</div>
         </div>
-        <a href="https://pay.kiwify.com.br/R9U6i9X" class="btn-ghost" style="width:100%;justify-content:center;margin-bottom:16px;">Quero o Guia →</a>
+        <a href="#" onclick="openModal();return false;" class="btn-ghost" style="width:100%;justify-content:center;margin-bottom:16px;">Quero o Guia →</a>
         <div class="guarantees2">
           <div class="g2"><span class="g2-i">🔒</span> Pagamento seguro</div>
           <div class="g2"><span class="g2-i">↩️</span> 7 dias de garantia</div>
@@ -924,13 +1021,13 @@ footer a{color:var(--gold);text-decoration:none;}
     <p class="final-sub">+1.000 mulheres já deram esse passo. A próxima pode ser você.</p>
     <div class="final-btns">
       <a href="https://pay.kiwify.com.br/AQz6JBt" class="btn-gold" style="padding:20px 50px;font-size:1rem;">🔥 Quero o Curso Completo</a>
-      <a href="https://pay.kiwify.com.br/R9U6i9X" class="btn-ghost">📖 Só o Guia — R$ 67</a>
+      <a href="#" onclick="openModal();return false;" class="btn-ghost">📖 Só o Guia — R$ 67</a>
     </div>
   </div>
 </section>
 
 <footer>
-  <p>© 2024 Thays Fernandes · Todos os direitos reservados</p>
+  <p>© 2026 Thays Fernandes · Todos os direitos reservados</p>
   <p style="margin-top:8px;">
     <a href="https://instagram.com/thaysfernanndes">@thaysfernanndes</a> ·
     <a href="https://thaysfernandes.com.br/link-bio-thays">thaysfernandes.com.br</a>
@@ -965,5 +1062,84 @@ document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 const mi = document.querySelector('.marquee-inner');
 mi.innerHTML += mi.innerHTML;
 </script>
+
+<!-- ── LEAD MODAL ── -->
+<div class="modal-overlay" id="leadModal">
+  <div class="modal-box">
+    <button class="modal-close" onclick="closeModal()">×</button>
+    <span class="modal-tag">✦ Guia de Tonalização</span>
+    <h2 class="modal-title">Quase lá! <em>Preencha</em><br>seus dados</h2>
+    <p class="modal-sub">Preencha abaixo para ir direto ao checkout com seus dados já preenchidos.</p>
+    <div class="field-group">
+      <div class="field-wrap">
+        <label>Seu nome completo</label>
+        <input type="text" id="leadName" placeholder="Ex: Maria Silva" autocomplete="name"/>
+      </div>
+      <div class="field-wrap">
+        <label>WhatsApp / Telefone</label>
+        <input type="tel" id="leadPhone" placeholder="(99) 99999-9999" autocomplete="tel"/>
+      </div>
+      <div class="field-wrap">
+        <label>E-mail</label>
+        <input type="email" id="leadEmail" placeholder="seu@email.com" autocomplete="email"/>
+      </div>
+    </div>
+    <button class="modal-btn" onclick="goToCheckout()">
+      🎯 Garantir meu Guia — R$ 67
+    </button>
+    <div class="modal-lock">
+      🔒 Pagamento 100% seguro · Hotmart · 7 dias de garantia
+    </div>
+  </div>
+</div>
+
+<script>
+// ── Modal Logic ──
+function openModal(){ document.getElementById('leadModal').classList.add('open'); }
+function closeModal(){ document.getElementById('leadModal').classList.remove('open'); }
+
+// Close on backdrop click
+document.getElementById('leadModal').addEventListener('click', function(e){
+  if(e.target === this) closeModal();
+});
+
+// Build Hotmart URL with pre-filled params
+function goToCheckout(){
+  const name  = document.getElementById('leadName').value.trim();
+  const phone = document.getElementById('leadPhone').value.trim();
+  const email = document.getElementById('leadEmail').value.trim();
+
+  if(!name || !email){
+    document.getElementById('leadName').style.borderColor = !name ? 'rgba(255,100,100,.6)' : '';
+    document.getElementById('leadEmail').style.borderColor = !email ? 'rgba(255,100,100,.6)' : '';
+    return;
+  }
+
+  const base = 'https://pay.hotmart.com/K97814978W?checkoutMode=10&off=ethwnz6o';
+  const params = new URLSearchParams({
+    buyerName: name,
+    buyerEmail: email,
+    buyerPhone: phone.replace(/\D/g,'')
+  });
+
+  window.open(base + '&' + params.toString(), '_blank');
+  closeModal();
+}
+
+// Phone mask
+document.getElementById('leadPhone').addEventListener('input', function(){
+  let v = this.value.replace(/\D/g,'').slice(0,11);
+  if(v.length > 6) v = '(' + v.slice(0,2) + ') ' + v.slice(2,7) + '-' + v.slice(7);
+  else if(v.length > 2) v = '(' + v.slice(0,2) + ') ' + v.slice(2);
+  else if(v.length > 0) v = '(' + v;
+  this.value = v;
+});
+
+// Allow Enter to submit
+document.querySelectorAll('#leadModal input').forEach(i => {
+  i.addEventListener('keydown', e => { if(e.key==='Enter') goToCheckout(); });
+});
+</script>
+
 </body>
 </html>
